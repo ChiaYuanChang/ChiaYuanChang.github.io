@@ -1,0 +1,44 @@
+# Site settings
+title: Albert Chang
+description: AI Software Engineer specializing in NLP and LLMs
+baseurl: ""
+url: "https://albert-cy-chang.github.io"
+
+# GitHub Pages settings
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+# Author information
+author:
+  name: Chia-Yuan Chang
+  title: AI Software Engineer
+  location: Taichung City, Taiwan
+  email: tw.ChiaYuanChang@gmail.com
+  linkedin: https://linkedin.com/in/albertchang-ccy
+  bio: >
+    AI Software Engineer with expertise in Natural Language Processing (NLP), 
+    chatbot development, and Large Language Models (LLMs) implementation.
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .github
+  - README.md
+  - CHANGELOG.md
+  - LICENSE
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
