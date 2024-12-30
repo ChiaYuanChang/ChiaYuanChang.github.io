@@ -18,25 +18,26 @@
         }
         
         .sidebar {
-            width: 300px;
+            width: 200px;
             background-color: #f8f9fa;
             padding: 2rem;
             position: fixed;
             height: 100vh;
             overflow-y: auto;
             border-right: 1px solid #dee2e6;
+            z-index: 1000;  /* Added to ensure sidebar stays on top */
         }
         
         .content {
             flex: 1;
             padding: 2rem;
-            margin-left: 300px;
+            margin-left: 250px;  /* Increased from 200px to 250px to account for sidebar padding */
             max-width: 800px;
         }
         
         .profile-image {
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             margin-bottom: 1rem;
             object-fit: cover;
@@ -78,6 +79,14 @@
             margin-bottom: 2rem;
             border-bottom: 1px solid #dee2e6;
             padding-bottom: 1rem;
+            margin-left: 250px;  /* Increased from 200px to 250px to match content margin */
+            background-color: white;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            padding: 1rem 2rem;
+            z-index: 999;
         }
         
         .nav a {
@@ -94,6 +103,11 @@
         .nav a.active {
             color: #007bff;
             border-bottom: 2px solid #007bff;
+        }
+
+        /* Added to prevent content from being hidden under fixed nav */
+        main.content {
+            margin-top: 60px;  /* Adjust based on nav height */
         }
     </style>
 </head>
