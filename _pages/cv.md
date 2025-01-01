@@ -1,3 +1,9 @@
+---
+layout: default
+title: Curriculum Vitae
+permalink: /cv/
+---
+
 # Chia-Yuan Chang
 
 ## AI Software Engineer
