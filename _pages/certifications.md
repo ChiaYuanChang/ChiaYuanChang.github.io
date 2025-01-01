@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Certifications & Awards
+permalink: /certifications/
 ---
 
 # Certifications
